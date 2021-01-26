@@ -1,0 +1,260 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: #f5f5f5;
+}
+::-webkit-scrollbar-button {
+  background-color: #e5e5e5;
+}
+::-webkit-scrollbar-corner {
+  background-color: #555;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* top header */
+.top_header {
+  background-color: white;
+  padding: 10px;
+}
+
+.top_header-links {
+  padding: 10px 0px;
+}
+.phone_link .fa,
+.email_link .fa {
+  font-size: 20px;
+  color: #1b9ce3;
+}
+
+.phone_link a,
+.email_link a {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.top_header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top_btn {
+  border: 3px solid #1b9ce3;
+  padding: 10px;
+  background-color: #1b9ce3;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.top_btn:hover {
+  background-color: white;
+  color: #1b9ce3;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 574px) {
+  .phone_link {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .top_header-container {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* navbar component */
+.bg-dark,
+.navbar-dark {
+  background-color: #233e62;
+}
+
+/* banner component */
+.slider_img {
+  height: 450px;
+}
+
+/* futhure section */
+.futhure_heading {
+  color: #233e62;
+}
+.futhure_card-active {
+  /* background-color: #f0f9fd; */
+  background-color: #1b9ce3;
+  color: white;
+  text-align: center;
+}
+
+.futhure_card {
+  background-color: #f0f9fd;
+  text-align: center;
+}
+
+.futhure_card .fa {
+  color: #1b9ce3;
+}
+
+.futhure_card:hover {
+  background-color: #1b9ce3;
+}
+
+.futhure_card:hover {
+  color: white;
+}
+
+.futhure_card:hover .fa {
+  color: white;
+}
+
+.futhure_right {
+  border: 5px solid #f0f9fd;
+  padding: 15px;
+}
+
+.futhure_right-button {
+  border: 3px solid #1b9ce3;
+  padding: 15px;
+  background-color: #1b9ce3;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.futhure_right-button:hover {
+  background-color: white;
+  color: #1b9ce3;
+  text-decoration: none;
+}
+
+/* data banner */
+
+.sub_banner {
+  position: relative;
+  background-image: url("../img/slider-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+}
+
+.sub_banner_container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1b9ce3;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+.sub_data-text {
+  position: absolute;
+  color: white;
+  z-index: 2;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.hover_cont {
+  position: absolute;
+  top: 70%;
+  left: 3%;
+  right: 3%;
+  z-index: 3;
+  padding: 10px;
+  background-color: white;
+}
+
+@media screen and (max-width: 574px) {
+  .hover_cont {
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    z-index: 3;
+    background-color: white;
+  }
+}
+
+/* services */
+
+.services {
+  margin-top: 120px;
+}
+
+@media screen and (max-width: 574px) {
+  .services {
+    margin-top: 380px;
+  }
+}
+
+/* blog */
+.blog_card {
+  border: 3px solid #1b9ce3;
+  padding: 5px;
+}
+
+/* contact */
+
+.contact {
+  padding: 25px;
+}
+
+.sotial {
+  margin-top: 15px;
+}
+
+.sotial a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+}
+
+/* about page */
+.about_banner {
+  position: relative;
+  background-image: url("../img/slider-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 280px;
+}
+
+.about_container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1b9ce3;
+  opacity: 0.6;
+  z-index: 2;
+}
+
+.about_banner-link {
+  position: absolute;
+  z-index: 3;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
